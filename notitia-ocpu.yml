@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pod-notitia-ocpu
   labels:
-    app: notitia-ocpu
+    app: notitia
 spec:
   containers:
   - name: notitia-ocpu

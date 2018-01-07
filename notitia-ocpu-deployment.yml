@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: deployment-notitia-ocpu
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: notitia
+    spec:
+      containers:
+      - name: notitia-ocpu
+        image: canaantt/notitia-ocpu
+        ports:
+        - name: ocpu-port
+          containerPort: 80

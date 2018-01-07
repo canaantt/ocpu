@@ -4,10 +4,9 @@ metadata:
   name: notitia-ocpu-service
 spec:
   ports:
-  - port: 31003
-    nodePort: 31003
+  - port: 81
     targetPort: ocpu-port
     protocol: TCP
   selector:
     app: notitia
-  type: NodePort
+  type: LoadBalancer
