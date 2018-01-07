@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-notitia-ocpu
+  labels:
+    app: notitia-ocpu
+spec:
+  containers:
+  - name: notitia-ocpu
+    image: canaantt/notitia-ocpu
+    ports:
+    - name: ocpu-port
+      containerPort: 80
